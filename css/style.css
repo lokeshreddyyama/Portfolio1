@@ -5,23 +5,18 @@
   padding: 0;
    box-sizing: border-box;
 }
-body {
-  font-family: 'Poppins', sans-serif;
-background-color: white;
-  color: #dddee7;
-  line-height: 1.6;
-  scroll-behavior: smooth;
-}
+
 html, body {
   background: linear-gradient(135deg,rgb(0, 0, 9),rgb(11, 7, 62)); 
   font-family: 'Poppins', sans-serif;
   color: #eeeef0;
   margin: 0;
+  line-height: 1.6;
   scroll-behavior: smooth;
 }
 
 section {
-  background-color: transparent; 
+   background-color:transparent ;
   max-width: 1400px;
   margin: 42px auto;
   padding: 40px 32px;
@@ -114,9 +109,10 @@ section {
   margin-bottom: 8px;
 }
 .banner h1 span {
-  color: #eeb3b3;
+  color: #c90b0b;
 }
 .banner h3 {
+      color: #1ea3b7;
   font-weight: 600;
   margin-bottom: 18px;
 }
@@ -181,7 +177,7 @@ section {
 }
 .social-icons a {
   font-size: 1.8rem;
-  color: #232946;
+  color: #255b6e;
   margin: 0 14px;
   transition: color 0.2s;
 }
