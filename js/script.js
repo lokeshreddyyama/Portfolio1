@@ -12,6 +12,19 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  document.querySelectorAll('.edu-card, .project-card, .service-card').forEach(card => {
+  card.addEventListener('mousemove', (e) => {
+    const rect = card.getBoundingClientRect();
+    const y = e.clientY - rect.top;    
+    const cy = rect.height / 2;
+    const dy = (y - cy) / cy;         
+    card.style.transform = `perspective(800px) rotateX(${dy * -0}deg) scale3d(1.05,1.05,1.08)`;
+  });
+  card.addEventListener('mouseleave', () => {
+    card.style.transform = '';
+  });
+});
+
   // Close menu after clicking a link
   document.querySelectorAll(".nav-links a").forEach(link => {
     link.addEventListener("click", () => {
@@ -86,7 +99,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Show/Hide buttons on scroll
     window.addEventListener("scroll", () => {
         if (window.scrollY > 200) {
-            scrollUp.style.opacity = "1";
+            scrollUp.style.opacity = "2";
         } else {
             scrollUp.style.opacity = "0";
         }
