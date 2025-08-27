@@ -119,6 +119,7 @@ section {
 .banner p {
   max-width: 600px;
   margin: 0 auto 22px;
+    color: #645f5f;
 }
 .banner-img {
   flex: 1 1 280px;
@@ -162,6 +163,7 @@ section {
 .about p {
   max-width: 800px;
   margin: 0 auto 5px;
+  color: #615b5b;
 }
 .Read-more {
   background-color: #232946;
