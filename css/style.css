@@ -75,7 +75,7 @@ section {
   }
   .nav-links {
     flex-direction: column;
-    background: #232946;
+    background: #050505;
     position: fixed;
     top: 58px;
     right: -100%;
