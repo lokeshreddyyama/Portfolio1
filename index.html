@@ -6,7 +6,7 @@
   <title>YAMA LOKESH REDDY | Portfolio</title>
   
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"/>
   <link rel="stylesheet" href="./css/style.css"/>
 </head>
 <body>
@@ -31,8 +31,8 @@
   <section id="banner" class="banner">
     <div class="banner-content">
       <h1>Hi, I'm <span>YAMA LOKESH REDDY</span></h1>
-      <h3>Frontend Developer</h3>
-      <p>I’m a passionate Frontend Developer dedicated to crafting engaging and responsive websites that blend design and functionality. With a strong eye for detail and a love for clean code, I specialize in turning ideas into pixel-perfect digital experiences.</p>
+      <h3>Full Stack  Developer</h3>
+      <p>I am a full stack developer who enjoys creating websites and web apps end to end. I work with technologies on both sides of the stack, and I love learning new things. All I want to do is build valuable, useful, easy-to-use, and reliable solutions for people.</p>
       <div class="cta-buttons">
         <a href="#" class="btn hire-me">Hire Me</a>
         <a href="#contact" class="btn lets-talk">Let's Talk</a>
@@ -44,8 +44,7 @@
   <!-- About Section -->
   <section id="about" class="about">
     <h2>About Me</h2>
-    <p>Hi, I’m Yama Lokesh Reddy, a passionate and dedicated Frontend Developer with a strong eye for design and detail. I specialize in crafting responsive, user-friendly websites that blend functionality with aesthetics. With a deep understanding of HTML, CSS, JavaScript, and modern frameworks, I strive to build web interfaces that not only look good but also offer a seamless user experience.
-I enjoy turning complex problems into clean, elegant code. Whether it’s developing from scratch or improving an existing UI, my goal is to ensure that every pixel and interaction is purposeful. I believe in writing efficient, maintainable code and staying updated with the latest trends in frontend technologies.</p>
+    <p>I'm a full stack developer capable of designing and developing responsive web sites and web apps. I am experienced in the front-end technologies of HTML, CSS, JavaScript, React, and Bootstrap to build user interfaces. On the back-end I utilize Node.js and PHP, which I use to build server-side logic and APIs. I maintain databases using MySQL and MongoDB to store and retrieve data. I am experienced with Git and GitHub for version control and collaboration, which helps me to develop clean and maintainable code. I take on complex problems and endeavor to learn new technologies to become a better developer as well as produce the digital solutions clients want. I focus on providing functional, scalable, secure and user-friendly applications from conception to deployment while maintaining development best practices.</p>
     <a href="#banner" class="btn Read-more">Read More</a><br>
     <div class="social-icons">
       <a href="https://github.com/lokeshreddyyama" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
@@ -67,7 +66,7 @@ I enjoy turning complex problems into clean, elegant code. Whether it’s develo
       <article class="edu-card">
         <h3>Intermediate</h3>
         <p><strong>Narayana Junior College</strong></p>
-        <p>CGPA: 8.5 (85%)</p>
+        <p>CGPA: 9.10 (91%)</p>
         <p>Subject: MPC</p>
       </article>
       <article class="edu-card">
@@ -111,6 +110,11 @@ I enjoy turning complex problems into clean, elegant code. Whether it’s develo
          <label style="color: rgb(86, 202, 228);"><i class="fa-brands fa-github"></i></label>
       <label>Git & GitHub</label>
       <div class="bar"><span class="fill git-fill" style="width: 70%;"></span></div>
+    </div>
+    <div class="skill-bar">
+         <label style="color: rgb(86, 202, 228);"><i class="fa-solid fa-database"></i></label>
+      <label>MySQL</label>
+      <div class="bar"><span class="fill sql-fill" style="width: 85%;"></span></div>
     </div>
   </section>
 
@@ -169,29 +173,36 @@ I enjoy turning complex problems into clean, elegant code. Whether it’s develo
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="contact">
+  <section id="container contact" class="contact" style="display: flex; gap: 40px; align-items: flex-start;">
+  
+  <div class="contact-info" style="flex: 0.3;margin-top: 200px; font-size: 1.1em; line-height: 1.6;">
+    <p><strong><i class="fa-solid fa-envelope"></i>Email:</strong>lokeshreddy.1831151@gmail.com</p>
+    <p><strong><i class="fa-solid fa-phone"></i>Phone:</strong> +91 9182512295</p>
+  </div>
+
+  <form id="contact-form" novalidate style="flex: 0.7;">
     <h2>Contact Me</h2>
-    <form id="contact-form" novalidate>
-      <div class="form-group">
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" placeholder="Enter your full name" required />
-      </div>
-      <div class="form-group">
-        <label for="email">Email Id:</label>
-        <input type="email" id="email" placeholder="Enter your email" required />
-      </div>
-      <div class="form-group">
-        <label for="phone">Phone No:</label>
-        <input type="tel" id="phone" placeholder="e.g., 0123456789" required pattern="[0-9]{10}" />
-      </div>
-      <div class="form-group">
-        <label for="message">Message:</label>
-        <textarea id="message" rows="5" placeholder="Type your message..." required></textarea>
-      </div>
-      <button type="submit" class="btn submit-btn">Submit</button>
-    </form>
-    <div id="form-status" role="alert" aria-live="polite"></div>
-  </section>
+    <div class="form-group">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" placeholder="Enter your full name" required />
+    </div>
+    <div class="form-group">
+      <label for="email">Email Id:</label>
+      <input type="email" id="email" placeholder="Enter your email" required />
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone No:</label>
+      <input type="tel" id="phone" placeholder="e.g., 0123456789" required pattern="[0-9]{10}" />
+    </div>
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea id="message" rows="5" placeholder="Type your message..." required></textarea>
+    </div>
+    <button type="submit" class="btn submit-btn">Submit</button>
+  </form>
+
+</section>
+
 
   <footer>
     <p>© 2025 Yama Lokesh Reddy | All Rights Reserved</p>

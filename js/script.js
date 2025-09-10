@@ -87,7 +87,7 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 document.addEventListener("DOMContentLoaded", () => {
     // Create scroll buttons dynamically
     const scrollUp = document.createElement("div");
-    scrollUp.innerHTML = "&#8679;";
+    scrollUp.innerHTML = "&#8593;";
     scrollUp.classList.add("scroll-btn", "up");
     document.body.appendChild(scrollUp);
 
