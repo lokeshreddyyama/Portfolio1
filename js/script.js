@@ -87,7 +87,7 @@ document.querySelectorAll('.nav-links a').forEach(link => {
 document.addEventListener("DOMContentLoaded", () => {
     // Create scroll buttons dynamically
     const scrollUp = document.createElement("div");
-    scrollUp.innerHTML = "&#8593;";
+    scrollUp.innerHTML = "↑";
     scrollUp.classList.add("scroll-btn", "up");
     document.body.appendChild(scrollUp);
 
@@ -99,9 +99,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // Show/Hide buttons on scroll
     window.addEventListener("scroll", () => {
         if (window.scrollY > 200) {
-            scrollUp.style.opacity = "2";
+            scrollUp.style.opacity = "5";
         } else {
-            scrollUp.style.opacity = "0";
+            scrollUp.style.opacity = "1";
         }
     });
 });
