@@ -28,7 +28,7 @@ section {
 /* Navbar */
 .navbar {
   background: #00020a;
-  padding: 14px 24px;
+  padding: 14px 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,7 +39,7 @@ section {
 }
 .logo {
   font-weight: 700;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   color: #a9a60e;
 }
 .menu-icon {

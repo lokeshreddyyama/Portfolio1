@@ -8,21 +8,25 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"/>
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="./css/style.css"/>
+  <script
+  type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
 </head>
 <body>
   <!-- Navigation -->
   <nav class="navbar">
-    <div class="logo">YAMA LOKESH REDDY</div>
+    <div class="logo">Lokesh Reddy</div>
     <input type="checkbox" id="menu-toggle" />
     <label for="menu-toggle" class="menu-icon"><i class="fas fa-bars"></i></label>
     <ul class="nav-links">
-      <li><a href="#banner">HOME</a></li>
-      <li><a href="#about">ABOUT</a></li>
-      <li><a href="#education">EDUCATION</a></li>
-      <li><a href="#skills">SKILLS</a></li>
-      <li><a href="#projects">PROJECTS</a></li>
-      <li><a href="#services">SERVICES</a></li>
-      <li><a href="#contact">CONTACT</a></li>
+      <li><a href="#banner">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
@@ -46,8 +50,8 @@
     <p>I'm a full stack developer capable of designing and developing responsive web sites and web apps. I am experienced in the front-end technologies of HTML, CSS, JavaScript, React, and Bootstrap to build user interfaces. On the back-end I utilize Node.js and PHP, which I use to build server-side logic and APIs. I maintain databases using MySQL and MongoDB to store and retrieve data. I am experienced with Git and GitHub for version control and collaboration, which helps me to develop clean and maintainable code. I take on complex problems and endeavor to learn new technologies to become a better developer as well as produce the digital solutions clients want. I focus on providing functional, scalable, secure and user-friendly applications from conception to deployment while maintaining development best practices.</p>
     <a href="#banner" class="btn Read-more">Read More</a><br>
     <div class="social-icons">
-      <a href="https://github.com/lokeshreddyyama" aria-label="GitHub" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/lokesh-reddy-yama-88863831a/" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/lokeshreddyyama" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/lokesh-reddy-yama-88863831a/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
       <a href="https://www.hackerrank.com/profile/yamalokeshreddy1" aria-label="hackerrank"><i class="fa-brands fa-hackerrank"></i></a>
     </div>
   </section>
@@ -80,7 +84,7 @@
   <!-- Technical Skills Section -->
   <section id="skills" class="skills">
     <div class="skills-content"style="padding: 10px;">
-      <h2>Coding Skills</h2>
+      <h2>Web Development Skills</h2>
     <div class="skill-bar">
      <label><i class="fa-brands fa-html5"  style="color: red;"></i>HTML5</label>
       <div class="bar"><span class="fill html-fill" style="width: 95%;"></span></div>
@@ -112,7 +116,7 @@
     </div>
     <div class="skills-content" style="margin-bottom: 205px;padding: 10px;">
     <div class="skill-bar">
-      <h2>Professional Skills</h2>
+      <h2>Programming Languages</h2>
      <label style="color: rgb(244, 248, 248);">C</label>
       <div class="bar"><span class="fill html-fill" style="width: 95%;"></span></div>
     </div>
@@ -133,7 +137,7 @@
 
   <!-- Projects Section -->
   <section id="projects" class="projects">
-    <h2>Projects</h2>
+    <h2> My Projects</h2>
     <div class="projects-container">
       <article class="project-card">
         <div class="p1">
@@ -218,7 +222,7 @@
       <label for="message">Message:</label>
       <textarea id="message" rows="5" placeholder="Type your message..." required></textarea>
     </div>
-    <button type="submit" class="btn submit-btn">Submit</button>
+    <button type="button" class="btn submit-btn" onclick="sendEmail()">Submit</button>
   </form>
 
 </section>
