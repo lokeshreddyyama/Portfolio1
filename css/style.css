@@ -165,7 +165,7 @@ section {
   .banner {
     flex-direction: row;
     gap: 32px; 
-    padding: 34px 16px;
+    padding: 34px 17px;
     text-align: left;
   }
   .banner-content {
