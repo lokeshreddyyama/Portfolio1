@@ -183,6 +183,6 @@ emailjs.send("service_1bxb5li","template_wr8ni1k", params)
   alert("Email sent!");
 })
 .catch(function() {
-   alert("Failed to sent!");
+   alert("Failed to sent");
 });
 }
